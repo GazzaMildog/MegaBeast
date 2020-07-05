@@ -54,7 +54,7 @@ class DiscordBot():
             else:
                 audio_source = youtubeservice.CreateAudioSteam(ctx.message.content[6:])
                 voice.play(audio_source)
-                await ctx.send(f"Now playing: {ctx.message.content[6:]} for {ctx.ctx.message.author.mention}")
+                await ctx.send(f"Now playing: {ctx.message.content[6:]} for {ctx.message.author.mention}")
    
 
         @client.command(pass_context=True)
