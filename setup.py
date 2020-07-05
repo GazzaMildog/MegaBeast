@@ -49,7 +49,7 @@ class DiscordBot():
                 self.StopAudio(audio_source, voice)
 
             if voice.is_paused():
-                voice.play(audio_source, voice)
+                voice.play(audio_source)
                 await ctx.send(f"Resuming...")
             else:
                 audio_source = youtubeservice.CreateAudioSteam(ctx.message.content[6:])
